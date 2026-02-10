@@ -47,7 +47,11 @@ const Header = () => {
               <></>
             )}
           </button>
-          {isCartPopupOpen && <CartPopup />}
+         {isCartPopupOpen && (
+              <CartPopup title="Keranjang">
+              <div>Isi keranjang</div>
+              </CartPopup>
+          )}
         </div>
       </div>
     </header>
